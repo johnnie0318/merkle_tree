@@ -1,0 +1,20 @@
+[package]
+name = "merkle_tree"
+version = "0.1.0"
+authors = ["alexpartos <alex.pinto@aventus.io>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hex = "0.4"
+primitive-types = "0.11.1"
+serde_json = "1.0"
+serde = { version = "1.0.138", features = ["derive"]}
+sha3 = "0.10.1"
+sp-core = "6.0.0"
+jsonrpc-core = "18.0.0"
+
+[[bin]]
+name = "merkle_tree"
+path = "main.rs"
